@@ -1,0 +1,11 @@
+MANIFEST
+Makefile.PL
+README
+CHANGES
+lib/Class/CanBeA.pm
+t/lib/Class/CanBeA/Daughter.pm
+t/lib/Class/CanBeA/Parent.pm
+t/lib/Class/CanBeA/Son.pm
+t/lib/Class/CanBeA/Grandchild.pm
+t/00_tests.t
+META.yml                                 Module meta-data (added by MakeMaker)
