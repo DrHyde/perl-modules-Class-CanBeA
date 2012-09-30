@@ -1,10 +1,12 @@
 MANIFEST
 Makefile.PL
 README
-CHANGES
+CHANGELOG
 lib/Class/CanBeA.pm
 t/lib/Class/CanBeA/Daughter.pm
 t/lib/Class/CanBeA/Parent.pm
 t/lib/Class/CanBeA/Son.pm
 t/lib/Class/CanBeA/Grandchild.pm
 t/00_tests.t
+t/pod-coverage.t
+t/pod.t

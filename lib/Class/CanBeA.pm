@@ -2,9 +2,8 @@ package Class::CanBeA;
 
 use strict;
 use warnings;
-# use diagnostics;
 
-our $VERSION = '1.2';
+our $VERSION = '1.3';
 
 sub subclasses {
     no strict 'refs';
@@ -39,8 +38,13 @@ Class::CanBeA - figure out what your class can be.
 =head1 DETAILS
 
 This package provides just one function, which it does *not* export, so you
-need to call it by its fully qualified name.  The C<subclasses> function
-takes a single argument, which should be a class name.  It returns a
+need to call it by its fully qualified name.
+
+=head1 FUNCTIONS
+
+=head2 subclasses
+
+Takes a single argument, which should be a class name.  It returns a
 reference to an array of all the classes which are loaded and which are
 subclasses of the specified superclass.
 

@@ -4,7 +4,6 @@ my $loaded;
 
 use strict;
 use warnings;
-use diagnostics;
 
 use Class::CanBeA;
 
