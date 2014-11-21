@@ -10,3 +10,4 @@ t/lib/Class/CanBeA/Grandchild.pm
 t/00_tests.t
 t/pod-coverage.t
 t/pod.t
+MANIFEST.SKIP
