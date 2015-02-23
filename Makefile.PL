@@ -3,8 +3,9 @@ WriteMakefile(
 		NAME         => 'Class::CanBeA',
     META_MERGE => {
         license => 'other',
-        resource => {
-	    repository => 'https://github.com/DrHyde/perl-modules-Class-CanBeA'
+        resources => {
+	    repository => 'https://github.com/DrHyde/perl-modules-Class-CanBeA',
+	    bugtracker => 'https://github.com/DrHyde/perl-modules-Class-CanBeA/issues'
         }
     },
 		VERSION_FROM => 'lib/Class/CanBeA.pm',
