@@ -3,7 +3,7 @@ package Class::CanBeA;
 use strict;
 use warnings;
 
-our $VERSION = '1.3';
+our $VERSION = '1.4';
 
 sub subclasses {
     no strict 'refs';
@@ -18,8 +18,7 @@ sub subclasses {
         grep { $_ ne 'SUPER::' && $_ ne '<none>::' && $_ ne 'main::' && $_ ne '0::' && !/^::/ && /::$/ } 
         keys %{$namespace}
     ) {
-        push @children, $parent.$child
-            if(UNIVERSAL::isa($parent.$child, $superclass));
+        push @children, $parent.$child if("$parent$child"->isa($superclass));
         push @children, @{subclasses($superclass, $parent.$child)};
     }
     return [grep { $_ ne $superclass } @children];
