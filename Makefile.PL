@@ -1,15 +1,12 @@
 use ExtUtils::MakeMaker;
 WriteMakefile(
-		NAME         => 'Class::CanBeA',
+    NAME       => 'Class::CanBeA',
+    LICENSE    => 'open_source',
     META_MERGE => {
-        license => 'open_source',
         resources => {
-	    repository => 'https://github.com/DrHyde/perl-modules-Class-CanBeA',
-	    bugtracker => 'https://github.com/DrHyde/perl-modules-Class-CanBeA/issues'
+            repository => 'https://github.com/DrHyde/perl-modules-Class-CanBeA',
+            bugtracker => 'https://github.com/DrHyde/perl-modules-Class-CanBeA/issues'
         }
     },
-		VERSION_FROM => 'lib/Class/CanBeA.pm',
-		PREREQ_PM    => {
-		        # Storable           => 2.07,
-		}
-	     );
+    VERSION_FROM => 'lib/Class/CanBeA.pm',
+);
